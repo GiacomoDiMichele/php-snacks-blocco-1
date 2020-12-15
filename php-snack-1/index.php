@@ -38,7 +38,10 @@
          <div class="">
              <?php
                  for($i = 0; $i < count($matches); $i++) {
-                     echo $matches[$i]['squadra-casa'];
+                     echo "<h2>Match:</h2>";
+                     echo ('<p>');
+                     echo $matches[$i]['squadra-casa'] . ' vs ' . $matches[$i]['squadra-ospite'] . ' = ' . $matches[$i]['punti-squadra-casa'] . ' - ' . $matches[$i]['punti-squadra-ospite'];
+                     echo ('</p>');
                  }
               ?>
          </div>
