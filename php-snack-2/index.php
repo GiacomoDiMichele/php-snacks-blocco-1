@@ -14,10 +14,10 @@ $age = $_GET['age'];
      <body>
          <div class="">
              <?php
-                if (strlen($name) > 3 ) {
-                    echo "nome inserito correttamente";
+                if (strlen($name) > 3 && strpos($mail, '.') !== false && strpos($mail, '@') !==false && (is_numeric($age) !== false)) {
+                    echo "accesso riuscito";
                 } else {
-                    echo "il nome inserito non rispetta le condizioni di lunghezza";
+                    echo "accesso negato";
                 }
               ?>
          </div>
